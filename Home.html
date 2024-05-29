@@ -1,0 +1,146 @@
+<html>
+<head>
+        <title>Car Dekho</title>
+        <link rel="stylesheet" href="Home.css">
+</head>
+<body >
+
+<!-- onclick="playCarRacingSound()"> -->
+        <!-- Embedding the car racing sound -->
+     <audio id="carRacingSound" controls>
+        <source src="formula_1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+        <nav>
+            <a href="#home" ><li class="nav_li">Home</li></a>
+            <a href="#predict" ><li class="nav_li">Predict</li></a>
+            <a href="Br.html" ><li class="nav_li">Broker</li></a>
+            <a href="brocker_registration.html"><li class="nav_li">Broker Career</li></a></a>
+            <a href="" ><li class="nav_li">About</li></a> 
+        </nav>
+    <div class="scroll">
+
+            
+        <!--img_cal-->
+        <div class="img_cal" id="home">
+            <img src="neo.jpg" alt="">
+            <div  class="main_box">
+                <div class="text-box">
+                    <div class="in_text">
+                        <h1>
+                            Make a Bolt Move with 
+                            <br>
+                        Dream Car</h1>
+                       
+                    </div>
+                    <div class="buttons">
+                        <a href="#predict" class="buttons_main">Predict</a><a href="Br.html" class="buttons_main">Broker</a>
+                    </div>
+                  
+                    <div class="m_text">
+                        <label>we gave you Predicted car price and get the Broker for buy and sell car's</label>
+                    </div>
+    
+                    
+                </div>
+                
+    
+            </div>
+        </div>
+       
+
+
+
+        <div class="predict" id="predict">
+            <br>
+            <div class="title_title">
+                <div class="in_div">
+                    <div class="sub_title">Predict</div>
+                </div>
+                <h2 class="info_title"> Get Best Price for Car To buy and sell</h2>
+                <div class="predict_lable">
+                    <label>Heyy...!<br>
+                        Are you looking for best Price of car, check on "Car 
+                     Dekho". You will get the best price for the cars, you can check the price of cars here...
+                    </label>
+                </div>
+
+                <div class="predict_cal">
+
+                    <a class="x" href="http://localhost:8501"><button>Predict</button></a>
+
+                </div>                
+            </div>
+            
+        </div>
+
+          <div class="brand">
+            <br><br>
+                <div class="text">Bigest brand cars availabke Grab Now</div>
+                <br>
+                <img src="Brand.jpeg" alt="" class="inside_brand">
+                <br><br><br>
+                <label >"Explore our selection of top-tier, iconic brand cars available now. Secure yours today and experience unparalleled luxury and performance on the road."</label>
+          </div>
+
+          <div class="end">
+            <div class="links">
+                <ul class="ul">
+                    <a href=""><li class="ulli">About</li></a>
+                    <a href=""><li class="ulli">help</li></a>
+                    <a href=""><li class="ulli">Policy</li></a>
+                </ul>
+            </div>
+
+           
+            <div class="connect">
+                <label>
+                    Connect Us ON
+                </label>
+                <br>
+                <br>
+                <div class="imgs">
+                    <a href=""><img src="insta.png" alt="" class="insta"></a>
+                    <a href=""><img src="fb.png" alt="" class="fb"></a>
+                    <img src="wh.png" alt="" class="wh">
+                </div>
+            </div>
+
+             <div class="cred">
+                <h2>Car Dekho</h2>
+                <label>Project Developed by SSVPS Student </label>    
+            </div>
+            <div class="alert">
+               <h3>Pay Atention</h3>
+               <br>
+                <ul>
+                    <a href=""><li class="a">alert</li></a>
+                    <a href=""><li class="a">Scamer</li></a>
+                    <a href=""><li class="a">Conatct US</li></a>
+                </ul>
+            </div>
+
+          </div>
+
+        <!--Do before this-->
+        </div>
+
+       
+        <script>
+             // Function to play the car racing sound
+        function playCarRacingSound() {
+            var audio = document.getElementById('carRacingSound');
+            audio.play(); // Play the sound
+        }
+
+        // Call the function to play the sound when the page loads
+        window.onload = playCarRacingSound;
+        </script>
+        <style>
+            /* CSS to hide the audio controls */
+            #carRacingSound {
+                display: none;
+            }
+        </style>
+    </body>
+</html>

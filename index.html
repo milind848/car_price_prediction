@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body style="background-image: url(LogImg.jpg); background-repeat: no-repeat; background-size: cover;" >
+    
+     <!-- Embedding the car racing sound -->
+     <audio id="carRacingSound" controls>
+        <source src="car_racing_sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+
+        <label class="title1">Login Page</label><br>
+        <input type="text" name="username" id="username" placeholder="Username" class="input1"><br>
+        <input type="password" name="password" id="password" placeholder="Password" class="input1" onclick="playCarRacingSound()" required>
+        <br>
+        <div class="sub">
+            <div onclick="playCarRacingSound()"><button onclick="login()" class="Submit">Submit</button></div> 
+            <div onclick="playCarRacingSound()">
+                <a href="javascript:void(0)" onclick="loginWithGoogle()" class="Google1">
+                    <img src="Google_Icons.webp" class="Google">
+                        <button class="Gtext" >
+                        Continue with Google
+                        </button>
+                </a></div>
+           
+            
+        </div>
+    </div>
+
+    <script>
+
+        // Function to play the car racing sound
+        function playCarRacingSound() {
+            var audio = document.getElementById('carRacingSound');
+            audio.play(); // Play the sound
+        }
+
+        // Call the function to play the sound when the page loads
+        window.onload = playCarRacingSound;
+      
+
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            
+            // Temporary hardcoded username and password
+            var tempUsername = "user";
+            var tempPassword = "pass";
+            
+            // Check if the entered username and password match the temporary ones
+            if (username === tempUsername && password === tempPassword) {
+                // Redirect to the home page if the credentials match
+                window.location.href = "Home.html";
+                // Display a success message
+                alert("Login successful!");
+                playCarRacingSound();
+            } else {
+                // Display an error message if the credentials do not match
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+
+        function loginWithGoogle() {
+           // Redirect the user to Google's authentication page
+            var clientId = '418780961475-rtdgptamomr1eosu0el37gblhv08hllv.apps.googleusercontent.com';
+            var redirectUri = 'file:///C:/Users/admin/Documents/Final/car_price_predictor-master/brocker/Home.html'; // This should be a URL on your website where Google will redirect after authentication
+            var scope = 'email profile'; // Define the scope of access required by your application
+
+            var authUrl = 'https://accounts.google.com/o/oauth2/auth?' +
+                'client_id=' + encodeURIComponent(clientId) +
+                '&redirect_uri=' + encodeURIComponent(redirectUri) +
+                '&response_type=code&scope=' + encodeURIComponent(scope);
+
+            // Redirect the user to the Google authentication page
+            window.location.href = authUrl;
+        }
+    </script>
+
+<style>
+    /* CSS to hide the audio controls */
+    #carRacingSound {
+        display: none;
+    }
+</style>
+
+</body>
+</html>

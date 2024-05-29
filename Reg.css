@@ -1,0 +1,57 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url('back.jpg'); /* Replace 'back.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.reg_div {
+    background-color: whitesmoke;
+    max-width: 40%;
+    height: 90%;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 0px 2px 2px gray;
+}
+
+.input {
+    width: 70%;
+    margin-top: 3px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+}
+
+.input_DOB {
+    width: 62%;
+    margin-top: 3px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+}
+
+.submit {
+    width: 70%;
+    margin-top: 3px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    background-color: coral;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.submit:hover {
+    background-color: rgb(253, 105, 52);
+}
+
+fieldset {
+    text-align: center;
+}
+
+.dis {
+    text-align: start;
+    margin-left: 2%;
+}
